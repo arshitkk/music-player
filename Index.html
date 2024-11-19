@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miyusik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- top -->
+            <header>
+                <div class="app-name">
+                    <p>Myusik</p>
+                </div>
+                <div class="playlist">
+                   <button  class=" btns pl-icon"> <i class="fa-solid fa-list"></i> </button>
+                </div>
+            </header>
+            <!-- mid -->
+            <div class="albumArt">
+                <img class="thumbnail " src="thumbnails/Capture.PNG" alt="">
+            </div>
+            <div class="info">
+                <span class="song-name "></span>
+                <span class="song-singer"></span>
+            </div>
+            <div class="progress-bar">
+                <div class="time">
+                    <div class="curr"> 0:00</div>/
+                    <div class="dur">0:00</div>
+                 </div>
+                <input type="range" id="seekbar" value="0" max="100">
+                <!-- <audio   src="music/Easier.mp3" ></audio> -->
+            </div>
+            <div class="controls">
+                <buttons class="btns ctrl prev"><i class="fa-solid fa-backward"></i></buttons>
+                <buttons class="btns ctrl play-pause"><i class="fa-solid fa-play"></i></buttons> 
+                <!-- <i class="fa-solid fa-pause"></i> -->
+                <buttons class=" btns ctrl next"><i class="fa-solid fa-forward"></i></buttons>
+            </div>
+        </div>
+        <div class="myLibrary">
+            <div class="title">My Library</div>
+            <button  class=" btns close-icon"> <i class="fa-solid fa-close"></i> </button>
+            <div class="songList" id="1">
+                 <span class="name" >Note Like Us</span>
+                 <span class="singer">Kendrick Lamar</span>
+                <span class="time">3:67</span>
+            </div>
+            <div class="songList"  id="2">
+                 <span class="name">Note Like Us</span>
+                 <span class="singer">Kendrick Lamar</span>
+                <span class="time">3:67</span>
+            </div>
+            <div class="songList" id="3">
+                 <span class="name" >Note Like Us</span>
+                 <span class="singer">Kendrick Lamar</span>
+                <span class="time">3:67</span>
+            </div>
+            <div class="songList" id="4">
+                 <span class="name" >Note Like Us</span>
+                 <span class="singer">Kendrick Lamar</span>
+                <span class="time">3:67</span>
+            </div>
+            <div class="songList" id="5">
+                 <span class="name" >Note Like Us</span>
+                 <span class="singer">Kendrick Lamar</span>
+                <span class="time">3:67</span>
+            </div>
+            <div class="songList"  id="6">
+                 <span class="name" >Note Like Us</span>
+                 <span class="singer">Kendrick Lamar</span>
+                <span class="time">3:67</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
